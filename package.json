@@ -1,0 +1,24 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "module": "es6",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/app.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "description": ""
+}
